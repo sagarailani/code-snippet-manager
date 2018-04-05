@@ -1,0 +1,13 @@
+{
+  "name": "code-snippet-manager",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.36",
+    "bcrypt": "^1.0.3",
+    "fs": "0.0.1-security",
+    "meteor-node-stubs": "^0.3.2"
+  }
+}

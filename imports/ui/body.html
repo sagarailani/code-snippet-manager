@@ -1,0 +1,49 @@
+<body>
+
+<aside>
+	
+	<div id="sidebar">
+		
+		<h2 id="heading">Snippet Manager</h2>
+		<hr>
+		<button class="btn" id="newfolder"><i class="fa fa-folder"></i> New Folder</button>
+
+		<ul>						
+
+			{{#each getCodes}}
+				<li class="getFileContent fa fa-file"> {{filename}}</li><br><br>
+			{{/each}}
+
+		</ul>
+
+	</div>
+
+
+</aside>
+
+<div id="wrapper">
+
+	<form id="paper" class="save">
+		
+		<div id="margin">
+
+			<select id="folderlist" name="folder">
+				
+				<option disabled selected>--Select a folder--</option>	
+
+			</select>
+
+			<input id="title" type="text" name="title" placeholder="Enter File Name">
+
+			<div id="signup">{{> loginButtons}}</div>			
+		</div>
+
+		<textarea placeholder="Enter code here" id="text" name="snippet" rows="15" style="overflow: hidden; word-wrap: break-word; resize: none; height: 450px; "></textarea>  
+		<br>
+		<input id="button" type="submit" value="Save">
+
+	</form>
+
+</div>
+
+</body>
